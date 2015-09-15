@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main">
+        <div class="enterprise-center">
+            <!--************************此处为banner**************************-->
+            <div class="course-banner">
+                <div class="container">
+                        <div class="enterprise-info">
+                            <div class="avatar root pull-left mr-15">
+                                <a href="#"><img class="img-circle" width="100" height="100" src="images/avatar.png" alt="授课老师头像"/></a>
+                            </div>
+                            <div>
+                                <h2 class="name white mb-20">利亚德学习中心</h2>
+                                <p class="white">
+                                    空调都熄灭了的十月深秋，谁走过塑胶跑道旁边的高楼，绿荫朱红的墙角没有持久空旷的情窦，抿一口秋日的新酒，作别从西到东的旧愁，点燃小身体里的大宇宙。空调都熄灭了的十月深秋，谁走过塑胶跑道旁边的高楼，绿荫朱红的墙角没有持久空旷的情窦，抿一口秋日的新酒，作别从西到东的旧愁，点燃小身体里的大宇宙。
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!--**************************此处为企业学习中心首页和公司通知等内容*************************** -->
+            <div class="container root">
+                <div class="main ml-5">
+                    <ul class="first-grade nav nav-tabs" role="tablist">
+                        <li role="presentation" class="mr-10"><a class="enterprise-firstgrade-active" href="#home" role="tab" data-toggle="tab">首页</a></li>
+                        <li role="presentation"><a href="#notification" role="tab" data-toggle="tab">公司通知</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content first-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <h4 class="title-black">企业课程中心</h4>
+                            <!--此处为二级tab嵌套开始，课程类别-->
+                            <ul class="second-grade nav nav-tabs mt-20 mb-30" role="tablist">
+                                <li role="presentation" class="active"><a class="" href="#course-common" role="tab" data-toggle="tab">通用课程</a></li>
+                                <!--<li role="presentation"><a href="#course-custom" role="tab" data-toggle="tab">定制课程</a></li>-->
+                                <li role="presentation"><a href="#course-live" role="tab" data-toggle="tab">直播课程</a></li>
+                                <li role="presentation"><a href="#course-inner" role="tab" data-toggle="tab">企业内部课程</a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="course-common">
+                                    <!--****************************此处为第三级tab嵌套*******************************-->
+                                    <div class="">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                            <li role="presentation" class="active"><a href="#c-1" role="tab" data-toggle="tab">全部</a></li>
+                                            <li role="presentation"><a href="#c-2" role="tab" data-toggle="tab">公务员</a></li>
+                                            <li role="presentation"><a href="#c-3" role="tab" data-toggle="tab">考研英语</a></li>
+                                            <li role="presentation"><a href="#c-4" role="tab" data-toggle="tab">考研政治</a></li>
+                                            <li role="presentation"><a href="#c-5" role="tab" data-toggle="tab">四六级</a></li>
+                                            <li role="presentation"><a href="#c-6" role="tab" data-toggle="tab">营养师</a></li>
+                                            <li role="presentation"><a href="#c-7" role="tab" data-toggle="tab">教师资格</a></li>
+                                            <li role="presentation"><a href="#c-8" role="tab" data-toggle="tab">会计从业</a></li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class=" tab-content tab-content-leap">
+                                            <div role="tabpanel" class="tab-pane active" id="c-1">
+                                                <ul class="course-card-list clearfix">
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- LEAP PAGER -->
+                                                <div class="pager-leap mb-120" ms-widget="pager"></div>
+                                                <!-- ---------- -->
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="c-2">
+                                                <ul class="course-card-list clearfix">
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">
+                                                            <div class="course-card">
+                                                                <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                                <div class="course-card-intro">
+                                                                    <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                                </div>
+                                                                <div class="course-card-teacher">
+                                                                    <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                                    <div>
+                                                                        <p class="teacher-name">主讲人：<span ml-10>昌黎</span></p>
+                                                                        <p>
+                                                                            <span>2014-20-24</span>
+                                                                            <span class="ml-5">更新</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- LEAP PAGER -->
+                                                <div class="pager-leap mb-120" ms-widget="pager"></div>
+                                                <!-- ---------- -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div role="tabpanel" class="tab-pane" id="course-custom">...</div>-->
+                                <div role="tabpanel" class="tab-pane" id="course-live">...</div>
+                                <div role="tabpanel" class="tab-pane" id="course-inner">...</div>
+
+                            </div>
+                            <!--二级嵌套结束-->
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="notification">
+                            <h4 class="title-black">企业内部通告</h4>
+                            <div class="discuss-list">
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                                <div class="discuss-item clearfix">
+                                    <p class="col-xs-8"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                    <p class="col-xs-4 light">2010-10-23</p>
+                                </div>
+                            </div>
+                            <!-- LEAP PAGER -->
+                            <div class="pager-leap mt-34 mb-120" ms-widget="pager"></div>
+                            <!-- ---------- -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    //    var model = avalon.define("page", function(){});
+
+    require(["pager/avalon.pager"], function() {
+        avalon.define("page", function(vm) {
+            vm.pager = {
+                alwaysShowNext: true,
+                alwaysShowPrev: true,
+                nextText: "下一页",
+                prevText: "上一页",
+                perPages: 5, //每页包含多少条目
+                showPages: 5 //要显示的页面的数量，从1开始
+            }
+            vm.$skipArray = ["pager"]
+        })
+        avalon.scan()
+    })
+
+</script>
+</body>
+</html>

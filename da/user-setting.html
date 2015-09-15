@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/leap-base.css"/>
+    <script src="../js/avalon/avalon.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'../views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main mt-50">
+        <div class="container">
+            <div class="user-setting">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs pl-30" role="tablist">
+                    <li role="presentation" class="active"><a href="#data" role="tab" data-toggle="tab">个人资料</a></li>
+                    <li role="presentation"><a href="#avatar" role="tab" data-toggle="tab">更换头像</a></li>
+                    <li role="presentation"><a href="#password-set" role="tab" data-toggle="tab">修改密码</a></li>
+                    <li role="presentation"><a href="#password-safety" role="tab" data-toggle="tab">密码安全</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="data">
+                        <table class="text-left setting-info-list ml-30 mt-40">
+                            <tbody>
+                            <tr>
+                                <td class="text-right">账号：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <div class="w-450">
+                                        <span>longjianlin</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">真实姓名：</td>
+                                <td></td>
+                                <td><input class="form-control" type="text" name="realname" placeholder="真实姓名"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">性别：</td>
+                                <td></td>
+                                <td>
+                                    <label class="mr-15">
+                                        <input type="radio" name="optionsRadios" id="male" class="vertical-2" value=""
+                                               checked>
+                                        男
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="female" class="vertical-2"
+                                               value="">
+                                        女
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">电子邮箱：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="email" name="email" placeholder="电子邮箱">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">手机号：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="mobile" placeholder="手机号">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">固定电话：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="phone" placeholder="固定电话">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">传真：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="fax" placeholder="传真">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">单位名称：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="companyname" placeholder="单位名称">
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="text-right">单位所在地：</td>
+                                <td></td>
+                                <td>
+                                    <form class="form-inline" role="form">
+                                        <select class="form-control w-150">
+                                            <option>河北省</option>
+                                        </select>
+                                        <select class="form-control w-150">
+                                            <option>邯郸市</option>
+                                        </select>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">单位性质：</td>
+                                <td></td>
+                                <td>
+                                    <form class="form-inline" role="form">
+                                        <select class="form-control w-150">
+                                            <option>机关</option>
+                                            <option>事业</option>
+                                            <option>企业</option>
+                                            <option>社区团体</option>
+                                            <option>军队</option>
+                                            <option>个人</option>
+                                            <option>其他组织</option>
+                                        </select>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">通讯地址：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="address" placeholder="通讯地址">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">邮编：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="number" name="zipcode" placeholder="邮编">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">学历：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="educational" placeholder="学历">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">所学专业：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="specialty" placeholder="所学专业">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">行政职务：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="position" placeholder="行政职务">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">行政级别：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="administrative_level"
+                                           placeholder="行政级别">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">技术职称：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="titles" placeholder="技术职称">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">技术职称级别：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <select class="form-control w-150" name="titles_level">
+                                        <option>高级</option>
+                                        <option>中级</option>
+                                        <option>初级</option>
+                                        <option>无</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">参加工作年份：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="add_job_time" placeholder="例如:1983年">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">从事档案工作年份：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <input class="form-control" type="text" name="add_archives_time"
+                                           placeholder="例如:1985年">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">档案工作形式：</td>
+                                <td style="width:15px;"></td>
+                                <td>
+                                    <select class="form-control w-150" name="archives_job_way">
+                                        <option>专职</option>
+                                        <option>兼职</option>
+                                        <option>带从事</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <form class="form-inline mt-20" role="form">
+                                        <button type="button" class="btn btn-success btn-setting-disabled ">取消</button>
+                                        <button type="button" class="btn btn-success btn-setting ml-20">保存</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--***********更换头像**********-->
+                    <div role="tabpanel" class="tab-pane" id="avatar">
+                        <div class="row">
+                            <div class="col-xs-7">
+                                <div class="ml-10 mt-40">
+                                    <!--此处为上传头像区域-->
+                                    <div class="upload">
+
+                                    </div>
+                                    <form class="form-inline mt-20" role="form">
+                                        <button type="button" class="btn btn-success btn-setting-disabled ">取消</button>
+                                        <button type="button" class="btn btn-success btn-setting ml-20">保存</button>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                            <div class="col-xs-5">
+                                <table class="avatar-preview mt-40 pull-right">
+                                    <tbody>
+                                    <tr>
+                                        <td class="w-220"><p class="title-black font-16">效果预览</p></td>
+                                        <td class="text-right">
+                                            <div class="small pull-right"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="large"></div>
+                                        </td>
+                                        <td class="text-right vertical-bottom">
+                                            <div class="middle"></div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--**************************设置密码*****************************-->
+                    <div role="tabpanel" class="tab-pane" id="password-set">
+                        <table class="text-left setting-info-list ml-30 mt-40">
+                            <tbody>
+                            <tr>
+                                <td>当前密码：</td>
+                                <td style="width: 15px;"></td>
+                                <td>
+                                    <div class="w-300"><input class="form-control" type="" placeholder=""></div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>新密码：</td>
+                                <td></td>
+                                <td>
+                                    <div class=""><input class="form-control" type="" placeholder=""></div>
+                                </td>
+                                <td><p class="ml-20">4-30个字符，数字、字母等</p></td>
+                            </tr>
+
+                            <tr>
+                                <td>确认新密码：</td>
+                                <td></td>
+                                <td>
+                                    <div class=""><input class="form-control" type="" placeholder=""></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <form class="form-inline mt-20" role="form">
+                                        <button type="button" class="btn btn-success btn-setting-disabled ">取消</button>
+                                        <button type="button" class="btn btn-success btn-setting ml-20">保存</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--***************************密码安全***************************-->
+                    <div role="tabpanel" class="tab-pane" id="password-safety">
+                        <table class="text-left setting-info-list ml-30 mt-40">
+                            <tbody>
+                            <tr>
+                                <td>邮件：</td>
+                                <td style="width: 35px;"></td>
+                                <td>
+                                    <span>leap@.cn</span>
+                                </td>
+                                <td>
+                                    <a class="ml-30 green" href="">(立即验证)</a>
+                                    <span class="ml-30 green hidden">已验证</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手机号：</td>
+                                <td></td>
+                                <td>
+                                    <span>14578966543</span>
+
+                                    <form class="form-inline mt-20 hidden" role="form">
+                                        <input class="form-control" type="" placeholder="">
+                                        <input class="form-control" type="" placeholder="验证码">
+                                        <button type="button" class="btn btn-default btn-sm">发送验证码</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <a class="ml-30 green" href="">修改</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <!--<div class="static-footer" ms-include-src="'../views/leap-footer.html'"></div>-->
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function () {
+    });
+</script>
+</body>
+</html>

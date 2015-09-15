@@ -1,0 +1,1 @@
+This folder only includes Javascript files

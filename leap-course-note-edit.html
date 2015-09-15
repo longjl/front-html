@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main mt-57 mb-160">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7 pr-50">
+                    <div class="">
+                        <h4 class="source-title title-black mb-20">编辑笔记</h4>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-sm-12 user-setting">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 user-setting">
+                                    <textarea class="form-control no-resize" rows="30"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 user-setting">
+                                    <form class="form-inline mt-20" role="form">
+                                        <button type="button" class="btn btn-success btn-setting ml-20 pull-right">发布</button>
+                                        <button type="button" class="btn btn-success btn-setting-disabled ml-20 pull-right hidden">发布</button>
+                                        <button type="button" class="btn btn-success btn-setting-disabled pull-right">取消</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-xs-5 pl-50 h-500">
+                    <div class="discuss-info">
+                        <div class="discuss-source">来自课程</div>
+                        <div class="ml-20">
+                            <h4 class="mt-34 mb-20 "><a class="title-black" href="">introduction to mind reading</a></h4>
+                            <p class="font-14 mb-5"><a href="">讲座6：how to take this course</a></p>
+                            <div class="course-rating">
+                                <span class="rate1 font-14">
+                                    <span class="star sf1 sf2 sf3 sf4 sf5"><i class="fa fa-star"></i></span>
+                                    <span class="star sf2 sf3 sf4 sf5"><i class="fa fa-star"></i></span>
+                                    <span class="star sf3 sf4 sf5"><i class="fa fa-star"></i></span>
+                                    <span class="star sf4 sf5"><i class="fa fa-star"></i></span>
+                                    <span class="star sf5"><i class="fa fa-star"></i></span>
+                                    <span class="rating-txt ml-20">8.6分</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>共有<span>69</span>人参加该课程，本公司<span>18</span>人参加</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div class="static-footer" ms-include-src="'views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+</script>
+</body>
+</html>

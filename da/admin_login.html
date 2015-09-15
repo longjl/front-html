@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/leap-base.css"/>
+
+    <script src="../js/avalon/avalon.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <!--<div ms-include-src="'views/leap-header.html'"></div>-->
+
+    <!-- LEAP COURSE LOGIN MODAL -->
+
+    <div class="modal login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">登录力扑内训</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal login-form">
+                        <div class="form-group">
+                            <div class="root mb-20">
+                                <span class="glyphicon glyphicon-envelope form-control-hinticon font-18 left-2"></span>
+                                <input type="text" class="form-control" placeholder="输入邮箱"/>
+                            </div>
+                            <div class="root mb-20">
+                                <span class="glyphicon glyphicon-lock form-control-hinticon font-18 left-2"></span>
+                                <input type="password" class="form-control" placeholder="输入密码"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-primary-login">立即登录</button>
+                        </div>
+                        <div class="form-group">
+                            <div class="login-form-rem clearfix">
+                                <div class="login-form-rem-chk pull-left root">
+                                    <i class="fa fa-check login-form-rem-chked"></i>
+                                    <input type="hidden" value="checked"/>
+                                </div>
+                                <div class="login-form-rem-txt-wrap">
+                                    <span class="login-form-rem-txt">自动登录&nbsp;|</span>
+                                    <a class="link-green" href="#">忘记密码了？</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------->
+
+    <!-- FOOTER -->
+    <!--<div ms-include-src="'views/leap-footer.html'"></div>-->
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/leap-base.css"/>
+
+    <script src="../js/avalon/avalon.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'../views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main">
+        <div class="container">
+            <div class="einfo-reg">
+                <div class="einfo-reg-head">
+                    <h5>快速注册</h5>
+                </div>
+                <div class="einfo-reg-body">
+                    <form class="form-horizontal einfo-form etrial" role="form">
+                        <div class="einfo-basic">
+                            <div class="form-group">
+                                <label for="username" class="col-xs-offset-2 col-xs-2 control-label">用户名：</label>
+
+                                <div class="col-xs-5 root">
+                                    <input type="text" class="form-control" id="username"
+                                           placeholder="输入用户名">
+                                    <span class="form-control-hinticon form-control-hinticon-info">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-xs-offset-2 col-xs-2 control-label">电子邮箱：</label>
+
+                                <div class="col-xs-5 root">
+                                    <input type="text" class="form-control" id="email"
+                                           placeholder="输入电子邮箱">
+                                    <span class="form-control-hinticon form-control-hinticon-info">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-xs-offset-2 col-xs-2 control-label">密码：</label>
+
+                                <div class="col-xs-5 root">
+                                    <input type="password" class="form-control" id="password" placeholder="输入密码">
+                                    <span class="form-control-hinticon form-control-hinticon-info">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword" class="col-xs-offset-2 col-xs-2 control-label">确认密码：</label>
+
+                                <div class="col-xs-5 root">
+                                    <input type="text" class="form-control" id="cpassword" placeholder="输入确认密码">
+                                    <span class="form-control-hinticon form-control-hinticon-info">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile" class="col-xs-offset-2 col-xs-2 control-label">手机号码：</label>
+
+                                <div class="col-xs-5 root">
+                                    <input type="text" class="form-control" id="mobile" placeholder="输入手机号码">
+                                    <span class="form-control-hinticon form-control-hinticon-info">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-offset-3">
+                                    <div class="btn-sbt">
+                                        <button class="btn btn-default"> 提 交 </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'../views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function () {
+    });
+</script>
+</body>
+</html>

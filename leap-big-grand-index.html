@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <title>力扑|企业培训</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <!--<link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.fullPage.min.js"></script>
+
+    <!-- Big grand index page style -->
+    <style>
+        /*
+         * --------------------------------------- */
+        body {
+            font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+            /*color: #ffffff;*/
+            background-color: #fff
+
+        }
+
+
+        /* Help class
+         * --------------------------------------- */
+        .simhei {
+            font-family: "simhei";
+        }
+        .font-25 {
+            font-size: 25px;
+        }
+        .hided {
+            display: none;
+        }
+        .show {
+            display: table !important;
+        }
+
+        /* Layout for our header
+         * --------------------------------------- */
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+        .root {
+            position: relative;
+        }
+
+
+        /* Style for our header texts
+         * --------------------------------------- */
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+            color: #ffffff;
+            border-bottom: 1px solid #d4efd5;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            display: block;
+            z-index: 9;
+        }
+
+        .header .logo img {
+            width: 160px; /* TBC */
+            height: 80px;
+        }
+
+        .menu {
+            padding-top: 23px;
+            width: 438px; /* TBC */
+            float: right;
+        }
+        .menu .input-group {
+            float: left;
+            width: 372px; /* TBC */
+        }
+
+
+        /* Overwrite form styles
+         * ======================================= */
+        .form-leap .form-control {
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .form-leap .form-control:focus {
+            border-color: #2fb037;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .form-leap .btn {
+            color: #ffffff;
+            background-color: #2fb037;
+            border-radius: 0;
+        }
+        .form-leap .input-group-btn:last-child > .btn,
+        .form-leap .input-group-btn:last-child > .btn-group {
+            margin-left: 0;
+        }
+        .form-leap .btn:hover,
+        .form-leap .btn:focus,
+        .form-leap .btn.focus {
+            color: #ffffff;
+        }
+        .form-leap .btn:active,
+        .form-leap .btn.active {
+            outline: 0;
+            background-image: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .form-leap .btn:focus,
+        .form-leap .btn:active:focus,
+        .form-leap .btn.active:focus,
+        .form-leap .btn.focus,
+        .form-leap .btn:active.focus,
+        .form-leap .btn.active.focus {
+            outline: none;
+        }
+
+        /* Header form */
+        .header-form {
+            background-color: #ffffff;
+        }
+
+
+        /* Section form */
+        .section-form .form-control {
+            height: 60px;
+            line-height: 18px;
+            line-height/*\**/: 46px\9; /* IE8 hack */
+            background-color: #f8f8f8;
+            border-color: #2fb037;
+            font-size: 16px;
+        }
+        .section-form .btn {
+            height: 60px;
+            width: 158px;
+            font-size: 23px;
+        }
+
+
+        /* Common Section Styles
+         * --------------------------------------- */
+        .section{
+            text-align:center;
+        }
+        .section h3 {
+            margin-bottom: 24px;
+            padding-right: 12px;
+            font-size: 50px;
+        }
+        .section p {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+
+        /* Section style
+         * -------------- Section 1
+         * --------------------------------------- */
+        .section1 {
+            background: url("images/grandindex/bg_road.png") no-repeat;
+            background-position: 0 250px;
+            /*background-size: cover;*/
+        }
+        .section1 h1 {
+            color: #125673;
+            font-size: 64px;
+        }
+
+        .signup-leap {
+            padding-top: 96px;
+            width: 654px;
+        }
+
+
+        /* Section style
+         * -------------- Section 2
+         * --------------------------------------- */
+        .section2 {}
+        .section2 h3,
+        .section2 p {
+            color: #77a1a8;
+        }
+
+        .section2-left {
+            position: relative;
+            width: 316px;
+            height: 360px;
+            background: url("images/grandindex/bg_pops.png") no-repeat;
+        }
+        .section2-left .service {
+            position: absolute;
+            left: 130px;
+            top: 20px;
+        }
+        .section2-left .plan {
+            position: absolute;
+            right: -108px;
+            top: 38px;
+        }
+        .section2-left .course {
+            position: absolute;
+            left: -90px;
+            bottom: 70px;
+        }
+        .section2-left .conference {
+            position: absolute;
+            left: 86px;
+            bottom: -30px;
+        }
+
+        .section2-right {
+            padding-top: 90px;
+            text-align: right;
+        }
+
+
+        /* Section style
+         * -------------- Section 3
+         * --------------------------------------- */
+        .section3 {
+            background: url("images/grandindex/bg_videos.png") no-repeat 50% 50%;
+        }
+
+        .section3-slogan {
+            position: absolute;
+            top: 160px;
+            left: 28%;
+            color: #3ec9d1;
+            text-align: left;
+        }
+
+        .section3 .videos {
+
+        }
+        .section3 .videos .video {
+            margin-left: 25px;
+            float: left;
+        }
+
+
+        /* Section style
+         * -------------- Section 4
+         * --------------------------------------- */
+        .section4-left {
+            position: absolute;
+            bottom: 0;
+        }
+        .section4-right {
+            position: absolute;
+            top: 0;
+            right: -180px;
+        }
+        .section4-slogan {
+            color: #67b16b;
+            text-align: right;
+        }
+
+
+        /* Section style
+         * -------------- Section 5
+         * --------------------------------------- */
+        .section5 {
+            background: url("images/grandindex/bg_connecteddots.png") no-repeat 70% 60%;
+        }
+        .section5-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1100px;
+        }
+        .section5-left {
+            padding-top: 70px;
+        }
+        .section5-slogan {
+            color: #929292;
+            text-align: left;
+        }
+
+
+
+        /* Section style
+         * -------------- Section 6
+         * --------------------------------------- */
+        .section6-slogan {
+            padding-top: 80px;
+            color: #b182be;
+            text-align: right;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!-- LEAP INDEX HEADER -->
+<div id="header" class="header fixed-header">
+    <div class="wrapper clearfix">
+        <a class="logo" href=""><img  src="images/grandindex/logo_index.png" alt="力扑教育"/></a>
+        <div class="menu clearfix">
+            <form class="form-leap header-form">
+                <div class="input-group hided">
+                    <input class="form-control" type="text"/>
+                    <span class="input-group-btn"><button class="btn" type="button">立即开通</button></span>
+                </div>
+                <div>
+                    <button class="btn pull-right" type="button">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- SECTIONS -->
+<div id="fullpage">
+
+    <!-- Section #1 -->
+    <div class="section section1" id="section1" data-anchor="01">
+        <div class="section-wrapper">
+            <h1>企业在线学习<span class="simhei">，</span>从力扑开始 <span class="font-25">● ● ●</span></h1>
+            <div class="center-block signup-leap">
+                <form class="form-leap section-form">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="输入企业名称（推荐使用简称）"/>
+                        <span class="input-group-btn"><button class="btn" type="button">立即开通</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #2 -->
+    <div class="section section2" id="section2" data-anchor="02">
+        <div class="wrapper clearfix">
+            <div class="section2-left pull-left">
+                <a href="#06"><img class="service" src="images/grandindex/pop_service.png" alt="定制服务"/></a>
+                <a href="#05"><img class="plan" src="images/grandindex/pop_plan.png" alt="培训计划"/></a>
+                <a href="#03"><img class="course" src="images/grandindex/pop_course.png" alt="力扑课程"/></a>
+                <a href="#04"><img class="conference" src="images/grandindex/pop_conference.png" alt="直播会议"/></a>
+            </div>
+            <div class="section2-right pull-right">
+                <h3>为企业培训而生</h3>
+                <p>为企业提供通用提高课程，</p>
+                <p>助力企业整体人员素质的提升。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #3 -->
+    <div class="section section3" id="section3" data-anchor="03">
+        <div class="section3-slogan">
+            <h3>通用课程</h3>
+            <p>为企业提供人力、行政、财务等通用课程，</p>
+            <p>联合数百位业内名师精心打造，并提供课程考核，确保课程学习效果真实可靠。</p>
+        </div>
+        <div class="slides">
+            <div class="slide" data-anchor="slide1">
+                <div class="clearfix wrapper videos">
+                    <div class="video"><img src="images/grandindex/video_1.png" alt=""/></div>
+                    <div class="video"><img src="images/grandindex/video_2.png" alt=""/></div>
+                    <div class="video"><img src="images/grandindex/video_3.png" alt=""/></div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div class="clearfix wrapper videos">
+                    <div class="video"><img src="images/grandindex/video_3.png" alt=""/></div>
+                    <div class="video"><img src="images/grandindex/video_1.png" alt=""/></div>
+                    <div class="video"><img src="images/grandindex/video_3.png" alt=""/></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #4 -->
+    <div class="section section4" id="section4" data-anchor="04">
+        <div class="wrapper clearfix">
+            <div class="section4-left pull-left root">
+                <img src="images/grandindex/ipad.png" alt="ipad"/>
+                <div class="section4-right pull-right section4-slogan">
+                    <h3>直播会议</h3>
+                    <p>为企业提供视频直播服务，稳定可靠。</p>
+                    <p>企业可随时创建直播课程、会议，</p>
+                    <p>为企业内部在线培训和团队学习提供支持。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #5 -->
+    <div class="section section5" id="section5" data-anchor="05">
+        <div class="section5-wrapper clearfix">
+            <div class="section5-left pull-left section5-slogan">
+                <h3>培训计划</h3>
+                <p>为企业提供培训计划服务，</p>
+                <p>企业可随时创建自己的培训计划，发给指定的部门或员工，</p>
+                <p>实时监控计划完成情况，掌控计划学习效果。</p>
+            </div>
+            <div class="section5-right pull-right">
+                <img src="images/grandindex/imac_1.png" alt=""/>
+                <img src="images/grandindex/imac_2.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #6 -->
+    <div class="section section6" id="section6" data-anchor="06">
+        <div class="wrapper clearfix">
+            <div class="section6-left pull-left">
+                <img src="images/grandindex/board.png" alt=""/>
+            </div>
+            <div class="section6-right pull-right section6-slogan">
+                <h3>定制服务</h3>
+                <p>为企业提供定制服务，根据企业需求及行业特点，</p>
+                <p>为企业提供课程和产品定制服务，全面满足企业的个性化需求。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section #7 -->
+    <div class="section section6" id="section7" data-anchor="07">
+        <div>
+            <img src="images/grandindex/macpro.png" alt=""/>
+        </div>
+    </div>
+
+    <!-- Section #8 -->
+
+
+</div>
+
+<!-- LEAP INDEX FOOTER -->
+<div class="footer">
+    <div class="wrapper">
+        <div class="footer-links">
+            <dl>
+                <dt>产品</dt>
+                <dd><a href="">产品介绍</a></dd>
+                <dd><a href="">使用条款</a></dd>
+            </dl>
+            <dl>
+                <dt>使用</dt>
+                <dd><a href="">使用入门</a></dd>
+                <dd><a href="">意见反馈</a></dd>
+            </dl>
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="">关于力扑</a></dd>
+                <dd><a href="">联系我们</a></dd>
+            </dl>
+            <div class="contact">
+                <p>客服电话 010-62880009</p>
+            </div>
+            <div class="social">
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        var targetInput = $('.header-form .input-group');
+
+        $('#fullpage').fullpage({
+            anchors: ['01', '02', '03','04','05', '06', '07'],
+            sectionsColor: ['#ffffff', '#f4fcff', '#ffffff', '#effff0', '#ffffff', '#fdf6ff', '#ffffff'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['做最好的企业培训', '为企业培训而生', '通用课程', '直播会议', '培训计划', '定制服务'],
+            css3: true,
+            onLeave: function(index, nextIndex, direction){
+                // after leaving section 1
+                if(index == 1 && direction =='down'){
+                    targetInput.fadeIn(1500, function(){
+                    }).css('display','table');
+                }
+
+                // after arriving section 1
+                if(index == 2 && direction =='up'){
+                    targetInput.fadeOut(500, function(){
+                    });
+                }
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

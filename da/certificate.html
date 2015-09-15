@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <style>
+        .link-warning{
+            position: absolute;
+            top: 40%;
+            /*left: 50%;*/
+            /*margin-left: -515px;*/
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main">
+        <div class="container">
+            <div class="link-warning">
+                <h2 class="title-black"><i class="fa fa-exclamation-triangle yellow mr-15"></i>此重置密码链接无效</h2>
+                <p class="font-14 mt-20"><span>2</span>秒后自动跳转到力扑网<a href="leap-findpassword-index.html" class="green ml-5 mr-5">找回密码</a>页</p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div class="static-footer" ms-include-src="'views/leap-footer.html'"></div>
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+</script>
+</body>
+</html>

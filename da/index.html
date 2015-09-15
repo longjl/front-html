@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/leap-base.css"/>
+
+    <script src="../js/avalon/avalon.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'../views/leap-header.html'"></div>
+
+    <!-- LEAP MY COURSE -->
+
+    <div class="main">
+        <div class="container">
+            <!-- 轮播图 -->
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                            <img alt="First slide [1140x500]" style="width: 1140px;height: 500px;"
+                                 src="http://zcimg.zcool.com.cn/zcimg/m_123954fc62646ac72235f42c1f0e.jpg"
+                                 data-holder-rendered="true">
+                        </div>
+                        <div class="item active left">
+                            <img alt="Second slide [1140x500]" style="width: 1140px;height: 500px;"
+                                 src="http://zcimg.zcool.com.cn/zcimg/m_140e54fc62d400000061b5c6f4a5.jpg"
+                                 data-holder-rendered="true">
+                        </div>
+                        <div class="item next left">
+                            <img alt="Third slide [1140x500]" style="width: 1140px;height: 500px;"
+                                 src="http://zcimg.zcool.com.cn/zcimg/m_388754fc62dd00000061b5b003f9.jpg"
+                                 data-holder-rendered="true">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="user-center-nav">
+                        <div class="row">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">登录</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="用户名">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                   placeholder="密码">
+                                        </div>
+                                        <button type="submit" class="btn btn-danger"> 登 录</button> &nbsp;&nbsp;&nbsp;&nbsp;<a href="register.html">快速注册</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">通知公告</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                    <div class="discuss-item clearfix">
+                                        <p class="col-xs-9"><a class="link-black" href="#">听的古风歌曲吗？...</a></p>
+
+                                        <p class="col-xs-3"><span>12.31</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">动态数据</h3>
+                                </div>
+                                <div class="panel-body">
+                                    注册人数，在线人数，课程数量等等
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9">
+                    <div class="user-center-main">
+                        <!-- USER COURSE -->
+                        <div class="user-course">
+                            <div class="user-course-head">
+                                <div class="start-line pull-left"></div>
+                                <h5>课程 <span class="counting">共(12项)</span></h5>
+                            </div>
+                            <div class="user-course-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                    <li role="presentation" class="active"><a href="#learning" role="tab"
+                                                                              data-toggle="tab">在学的课程</a></li>
+                                    <li role="presentation"><a href="#learnt" role="tab" data-toggle="tab">学完的课程</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-leap">
+                                    <div role="tabpanel" class="tab-pane active" id="learning">
+                                        <div class="clearfix">
+                                            <a href="video.html">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- LEAP PAGER -->
+                                        <div class="pager-leap" ms-widget="pager"></div>
+                                        <!-- ---------- -->
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="learnt">
+                                        <div class="clearfix">
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="../images/course_cover.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+
+                                                            <p><span>中南财经政法大学</span><span
+                                                                    class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="../images/course_cover2.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="../images/course_cover3.png"
+                                                         alt="课程封面"/>
+
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32"
+                                                             src="../images/avatar.png" alt="讲师头像"/>
+
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- LEAP PAGER -->
+                                        <div class="pager-leap" ms-widget="pager"></div>
+                                        <!-- ---------- -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------- -->
+
+                        <!-- LEAP PAGER
+                        <div class="pager-leap" ms-widget="pager"></div>
+                         ---------- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- -->
+
+
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'../views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    //    var model = avalon.define("page", function(){});
+
+    require(["pager/avalon.pager"], function () {
+        avalon.define("page", function (vm) {
+            vm.pager = {
+                alwaysShowNext: true,
+                alwaysShowPrev: true,
+                nextText: "下一页",
+                prevText: "上一页",
+                perPages: 5, //每页包含多少条目
+                showPages: 5 //要显示的页面的数量，从1开始
+            }
+            vm.$skipArray = ["pager"]
+        })
+        avalon.scan()
+    })
+
+</script>
+</body>
+</html>

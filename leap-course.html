@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+    <div class="main mt-40 mb-160">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="pr-10">
+                        <div class="course-progress clearfix">
+                            <div class="pull-left">
+                                <h4><a class="white" href="">公务员新编申论讲座</a></h4>
+                                <p class="course-progress-info">已学到：every dimension 3:47</p>
+                            </div>
+                            <div class="course-play pull-right">
+                                <a href="">
+                                    <span class="play-continue-container root"><i class="fa fa-play-circle play-continue"></i></span><br/>
+                                    <span class="white">继续学习</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="course-progress-bar">
+                            <div class="progress root">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="percent">已完成60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--**********此处是课程列表************-->
+
+                        <ul class="course-list">
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-adjust font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-adjust font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle gray-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle gray-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="show" href="">
+                                    <i class="fa fa-circle font-14"></i>讲座1:welcome<br/>
+                                    <span class="course-list-item-length">
+                                        <i class="fa fa-play-circle font-14"></i>06:05
+                                    </span>
+                                </a>
+
+                            </li>
+
+                        </ul>
+                        <!--****************此处为分页*******************-->
+                        <div class="pagination"></div>
+                    </div>
+                </div>
+
+                <!--****************************此处为讨论、笔记、正在学等******************************************-->
+                <div class="col-xs-5">
+                    <div class="course-tab-container">
+                        <ul class="course-tab" role="tablist">
+                            <li role="presentation" class="tab-active col-xs-4"><a href="#discuss" role="tab" data-toggle="tab">讨论</a></li>
+                            <li role="presentation" class="col-xs-4"><a href="#note" role="tab" data-toggle="tab">笔记</a></li>
+                            <li role="presentation" class="col-xs-4"><a href="#learning" role="tab" data-toggle="tab">正在学</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content clearfix">
+                            <div role="tabpanel" class="tab-pane active" id="discuss">
+                                <div class="dropdown pull-left">
+                                    <select name="selectAge" id="choice-order">
+                                        <option value="1"><a href="">全部讨论</a></option>
+                                        <option value="2"><a href="">我的帖子</a></option>
+                                        <option value="3"><a href="">课程名1</a></option>
+                                        <option value="4"><a href="">课程名2</a></option>
+                                        <option value="5"><a href="">课程名3</a></option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <a class="a-active pull-right" href="">发新帖</a>
+                                    <div class="new-edit clearfix show">
+                                        <div class="arrow-new"></div>
+                                        <div class="content-new">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入讨论主题">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="2" placeholder="输入讨论内容"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>
+                                                        <input class="top-2" type="checkbox" value="">
+                                                        提问
+                                                    </label>
+                                                    <button type="button" class="btn btn-success btn-publish pull-right">发表</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="course-tab-list clearfix">
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black mark-link" href="">在雾霾中举行群众体育性质浓厚的</a><i class="fa fa-question"></i>
+                                            </p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="" title="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span><a href=""><i class="fa fa-angle-double-down font-18 top-2"></i>查看全部</a></span>
+                            </div>
+
+
+
+                            <!--*****************************************笔记*********************************************-->
+                            <div id="note" role="tabpanel" class="tab-pane" >
+                                <div class="dropdown pull-left">
+                                    <select name="selectAge" id="choice-order">
+                                        <option value="1"><a href="">全部笔记全部笔记全部笔记全部笔记全部笔记</a></option>
+                                        <option value="2"><a href="">我的笔记</a></option>
+                                        <option value="3"><a href="">课程名1</a></option>
+                                        <option value="4"><a href="">课程名2</a></option>
+                                        <option value="5"><a href="">课程名3</a></option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <a class="a-active pull-right" href="">写笔记</a>
+                                    <div class="new-edit clearfix show">
+                                        <div class="arrow-new"></div>
+                                        <div class="content-new">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入笔记标题">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="2" placeholder="输入笔记内容"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>
+                                                        <input class="top-2" type="checkbox" value="">
+                                                        仅自己可见
+                                                    </label>
+                                                    <button type="button" class="btn btn-success btn-publish pull-right">发表</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="course-tab-list clearfix">
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p><a class="black" href="">手头会有自己整理了一番，拿来给大家分享</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><img class="img-circle pull-left" width="32" height="32" src="images/avatar.png" alt=""></a>
+                                        <div class="pull-left ml-10">
+                                            <p  class="tab-list"><a  class="title-black" href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <p  class="tab-list"><a href="">在雾霾中举行群众体育性质浓厚的马拉松，对提高人们的防范雾霾意识，起到了非常不好的示范效应</a></p>
+                                            <div class="list-item-info pull-left">
+                                                <span class="nickname"><a href="">晒太阳的猫</a></span>
+                                                <span class="line">|</span>
+                                                <span class="timestamp">10分钟前</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span><a href=""><i class="fa fa-angle-double-down font-18 top-2"></i>查看全部</a></span>
+                            </div>
+                            <!--*************************************正在学******************************************-->
+                            <div role="tabpanel" class="tab-pane" id="learning">
+                                <!--记得此处要把span中的内容赋给a标签的title属性-->
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">萧敬腾</span></a>
+                                <a class="avatar-bigger-container root" title="周杰伦&方大同" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦&方法同</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                                <a class="avatar-bigger-container root" title="" href=""><img class="img-circle avatar-bigger pull-left" src="images/avatar.png" alt=""><span class="avatar-name">周杰伦</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+
+//    得到a标签的内容赋给title
+    $(function(){
+
+        $("p.tab-list>a").each(function(){
+            var content=$(this).text();
+            $(this).attr("title",content);
+
+        });
+
+    });
+</script>
+</body>
+</html>
+</body>
+</html>

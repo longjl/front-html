@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- MAIN CONTENT STARTS-->
+
+
+    <!-- MAIN CONTENT ENDS-->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+</script>
+</body>
+</html>

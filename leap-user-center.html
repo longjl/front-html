@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.css"/>
+    <link rel="stylesheet" href="css/leap-base.css"/>
+
+    <script src="js/avalon/avalon.js"></script>
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div ms-controller="page">
+
+    <!-- HEADER -->
+    <div ms-include-src="'views/leap-header.html'"></div>
+
+    <!-- LEAP USER CENTER-->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="user-center-main">
+                        <!-- USER COURSE -->
+                        <div class="user-course">
+                            <div class="user-course-head clearfix">
+                                <div class="pull-left">
+                                    <div class="start-line pull-left"></div>
+                                    <h5>课程 <span class="counting">共(12项)</span></h5>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#">全部课程&nbsp;<i class="fa fa-angle-double-right font-18 top-1"></i>&nbsp;</a>
+                                </div>
+                            </div>
+                            <div class="user-course-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                    <li role="presentation" class="active"><a href="#learning" role="tab" data-toggle="tab">在学的课程</a></li>
+                                    <li role="presentation"><a href="#learnt" role="tab" data-toggle="tab">学完的课程</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-leap">
+                                    <div role="tabpanel" class="tab-pane active" id="learning">
+                                        <div class="clearfix">
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="images/course_cover.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 20%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程讲解了如何使用Ruby开发工具从零开始搭建一个博客应用程序。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+                                                            <p><span>中南财经政法大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="images/course_cover2.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 70%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="images/course_cover3.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="learnt">
+                                        <div class="clearfix">
+                                            <a href="#">
+                                                <div class="course-card course-card-first">
+                                                    <img width="223" height="125" src="images/course_cover4.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>你造为什么Amazon这么牛吗？因为贝索斯大王领导他们搞了一个AWS!</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">昌黎</p>
+                                                            <p><span>中南财经政法大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card">
+                                                    <img width="223" height="125" src="images/course_cover5.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>课程介绍了大规模数据处理、分析和挖掘相关的常用算法理论</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">郭春春</p>
+                                                            <p><span>清华大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="course-card course-card-last">
+                                                    <img width="223" height="125" src="images/course_cover6.png" alt="课程封面"/>
+                                                    <div class="course-card-progress">
+                                                        <div class="course-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="course-card-intro">
+                                                        <span>作为IBM Worklight整体移动开发的一个概要入门课程。</span>
+                                                    </div>
+                                                    <div class="course-card-teacher">
+                                                        <img class="pull-left" width="32" height="32" src="images/avatar.png" alt="讲师头像"/>
+                                                        <div>
+                                                            <p class="teacher-name">张彪</p>
+                                                            <p><span>武汉大学</span><span class="teacher-title">教授</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------- -->
+
+                        <!-- ENTERPRISE PLAN -->
+                        <div class="enterprise-plan">
+                            <div class="eplan-head clearfix">
+                                <div class="pull-left">
+                                    <div class="start-line pull-left"></div>
+                                    <h5>企业计划 <span class="counting">共(3项)</span></h5>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#">全部计划&nbsp;<i class="fa fa-angle-double-right font-18 top-1"></i>&nbsp;</a>
+                                </div>
+                            </div>
+                            <div class="eplan-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                    <li role="presentation" class="active"><a href="#excuting" role="tab" data-toggle="tab">执行中</a></li>
+                                    <li role="presentation"><a href="#done" role="tab" data-toggle="tab">已完成</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-leap">
+                                    <div role="tabpanel" class="tab-pane active" id="excuting">
+                                        <div class="clearfix">
+                                            <a href="#">
+                                                <div class="eplan-card eplan-card-first">
+                                                    <img width="223" height="125" src="images/course_cover.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 5%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>你知道吗？这是个计划，你得执行它，必须执行 执行执行执行。</span>
+                                                        <p>结束时间：2014-10-30</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="eplan-card">
+                                                    <img width="223" height="125" src="images/course_cover2.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 39%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>你知道吗？这是个计划，你得执行它，必须执行 执行执行执行。</span>
+                                                        <p class="warning-red">结束时间：2014-10-31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="eplan-card eplan-card-last">
+                                                    <img width="223" height="125" src="images/course_cover3.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 23%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>你知道吗？这是个计划，你得执行它，必须执行 执行执行执行。</span>
+                                                        <p>结束时间：2014-11-12</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="done">
+                                        <div class="clearfix">
+                                            <a href="#">
+                                                <div class="eplan-card eplan-card-first">
+                                                    <img width="223" height="125" src="images/course_cover4.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>DAMN IT！我终于完成了公司布置的计划了啊！！！！</span>
+                                                        <p>结束时间：2014-10-30</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="eplan-card">
+                                                    <img width="223" height="125" src="images/course_cover5.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>DAMN IT！我终于完成了公司布置的计划了啊！！！！</span>
+                                                        <p>结束时间：2014-10-31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="eplan-card eplan-card-last">
+                                                    <img width="223" height="125" src="images/course_cover6.png" alt="企业计划封面"/>
+                                                    <div class="eplan-card-progress">
+                                                        <div class="eplan-card-progress-cur" style="width: 100%"></div>
+                                                    </div>
+                                                    <div class="eplan-card-intro">
+                                                        <span>DAMN IT！我终于完成了公司布置的计划了啊！！！！</span>
+                                                        <p>结束时间：2014-10-31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------------- -->
+
+                        <!-- DISCUSSION -->
+                        <div class="discuss">
+                            <div class="discuss-head clearfix">
+                                <div class="pull-left">
+                                    <div class="start-line pull-left"></div>
+                                    <h5>讨论 <span class="counting">共(56条)</span></h5>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#">全部讨论&nbsp;<i class="fa fa-angle-double-right font-18 top-1"></i>&nbsp;</a>
+                                </div>
+                            </div>
+                            <div class="discuss-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                    <li role="presentation" class="active"><a href="#published" role="tab" data-toggle="tab">发起的</a></li>
+                                    <li role="presentation"><a href="#replied" role="tab" data-toggle="tab">参与的</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-leap">
+                                    <div role="tabpanel" class="tab-pane active" id="published">
+                                        <div class="discuss-list">
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="replied">
+                                        <div class="discuss-list">
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                            <div class="discuss-item clearfix">
+                                                <p class="col-xs-9"><a class="link-black" href="#">有好听的古风歌曲吗？能带剧情最好了！么么哒~</a></p>
+                                                <p class="col-xs-3"><span>2013年12月31日</span><span class="time">16:03</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------- -->
+
+
+                        <!-- NOTE -->
+                        <div class="note">
+                            <div class="note-head clearfix">
+                                <div class="pull-left">
+                                    <div class="start-line pull-left"></div>
+                                    <h5>笔记 <span class="counting">共(7条)</span></h5>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#">全部笔记&nbsp;<i class="fa fa-angle-double-right font-18 top-1"></i>&nbsp;</a>
+                                </div>
+                            </div>
+                            <div class="note-body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-leap" role="tablist">
+                                    <li role="presentation" class="active"><a href="#raised" role="tab" data-toggle="tab">发起的</a></li>
+                                    <li role="presentation"><a href="#involved" role="tab" data-toggle="tab">参与的</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-leap">
+                                    <div role="tabpanel" class="tab-pane active" id="raised">
+                                        <div class="note-list">
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情。爱情的枪如何~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="involved">
+                                        <div class="note-list">
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情。爱情的枪如何~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                            <div class="note-item">
+                                                <div class="note-title clearfix">
+                                                    <h6 class="pull-left"><a class="link-blue" href="#">有好听的古风歌曲吗？最好带剧情~</a></h6>
+                                                    <span class="pull-right">发表于11月4日</span>
+                                                </div>
+                                                <div class="note-info">
+                                                    <span>来自课程：<a href="#">中级会计务实</a></span>
+                                                    <span><a href="#">董小姐</a></span>
+                                                    <span class="note-info-tag"><a href="#"><i class="fa fa-play"></i> 00:12:34</a></span>
+                                                </div>
+                                                <p>所以那些可能都不是真的 董小姐
+                                                    你才不是一个没有故事的女同学
+                                                    爱上一匹野马 可我的家里没有草原
+                                                    这让我感到绝望 董小姐 董小姐，
+                                                    你熄灭了烟，说起从前 你说前半生
+                                                    就这样吧 还有明天董小姐，你可知
+                                                    道我说够了再见在五月的早晨，终于
+                                                    丢失了睡眠... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---- -->
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="user-center-nav">
+                        <h4><a class="link-blue" href="">破破的熊</a> 的学习中心</h4>
+                        <a href="#"><img width="180" height="180" src="images/avatar.png" alt="用户头像"/></a>
+                        <ul>
+                            <li><i class="fa fa-list"></i><a class="link-gray" href="#">课程 (12)</a></li>
+                            <li><i class="fa fa-file-text-o"></i><a class="link-gray" href="#">企业计划 (3)</a></li>
+                            <li><i class="fa fa-comment-o"></i><a class="link-gray" href="#">讨论 (59)</a></li>
+                            <li><i class="fa fa-pencil-square-o"></i><a class="link-gray" href="#">笔记 (5)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------- -->
+
+    <!-- FOOTER -->
+    <div ms-include-src="'views/leap-footer.html'"></div>
+
+</div>
+
+<!-- Avalon define activate -->
+<script>
+    var model = avalon.define("page", function(){});
+
+    /* using jQuery for :last-child not working in IE8*/
+
+</script>
+</body>
+</html>
